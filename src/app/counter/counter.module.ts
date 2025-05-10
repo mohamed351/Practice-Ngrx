@@ -5,6 +5,7 @@ import { CounterAdvancedControlComponent } from './counter-advanced-control/coun
 import { CounterControlsComponent } from './counter-controls/counter-controls.component';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 const router: Routes = [{ path: '', component: CounterComponent }];
 
@@ -15,6 +16,6 @@ const router: Routes = [{ path: '', component: CounterComponent }];
     CounterAdvancedControlComponent,
     CounterControlsComponent,
   ],
-  imports: [ CommonModule,RouterModule.forChild(router)],
+  imports: [CommonModule, RouterModule.forChild(router), FormsModule],
 })
 export class Counter {}

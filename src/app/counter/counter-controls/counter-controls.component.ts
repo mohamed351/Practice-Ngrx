@@ -4,9 +4,10 @@ import { CounterState } from '../../store/app.state';
 import { decrement, increment, reset } from '../../store/counter.action';
 
 @Component({
-  selector: 'app-counter-controls',
-  templateUrl: './counter-controls.component.html',
-  styleUrl: './counter-controls.component.css',
+    selector: 'app-counter-controls',
+    templateUrl: './counter-controls.component.html',
+    styleUrl: './counter-controls.component.css',
+    standalone: false
 })
 export class CounterControlsComponent {
   constructor(private store: Store<{ counter: CounterState }>) {}

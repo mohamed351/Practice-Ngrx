@@ -5,6 +5,7 @@ import {
   incrementByValue,
   reset,
 } from './counter.action';
+import { PostState } from '../posts/post/state/post.state';
 export interface CounterState {
   counter: number;
 }
@@ -39,3 +40,8 @@ export const counterReducer = createReducer(
     };
   })
 );
+
+export interface AppState {
+  counter: CounterState;
+  posts: PostState;
+}

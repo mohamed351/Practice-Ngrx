@@ -1,4 +1,9 @@
 <div class="input-group mt-5">
-  <input type="text" placeholder="Counter" class="form-control" />
-  <button class="btn btn-primary">Increment</button>
+  <input
+    type="text"
+    placeholder="Counter"
+    [(ngModel)]="counter"
+    class="form-control"
+  />
+  <button class="btn btn-primary" (click)="adding()">Increment</button>
 </div>
