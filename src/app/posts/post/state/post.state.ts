@@ -1,7 +1,12 @@
 import { createReducer } from '@ngrx/store';
 
+export interface Post {
+  id: number;
+  title: string;
+  description: string;
+}
 export interface PostState {
-  posts: { id: number; title: string; description: string }[];
+  posts: Post[];
 }
 const intitialState: PostState = {
   posts: [
